@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohummadsultan0-sudo.github.io/sitemap.xml
