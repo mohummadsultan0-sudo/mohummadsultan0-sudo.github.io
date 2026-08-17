@@ -52,7 +52,7 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
-          <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "") || "/"}>
+          <WouterRouter base={import.meta.env.BASE_URL === "/" ? undefined : import.meta.env.BASE_URL.replace(/\/$/, "")}>
             <RouteMeta />
             <Suspense fallback={<div className="route-loading" role="status" aria-live="polite">Opening local inspection workspace…</div>}><AppRoutes /></Suspense>
           </WouterRouter>
